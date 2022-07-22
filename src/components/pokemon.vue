@@ -3,6 +3,7 @@
     <input v-model="numero" type="text" placeholder="Ingresa un número" />
     <button v-on:click="obtenerRespuesta">Click Aquí!</button>
   </div>
+  
 
   <table>
     <tr>
