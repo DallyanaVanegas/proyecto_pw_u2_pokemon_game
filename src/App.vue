@@ -1,17 +1,18 @@
 <template>
-  <pokemonPage/>
+  <ConsultaPage/>
 </template>
 
 <script>
 import pokemon from "./components/pokemon.vue";
 import PokemonPage from "./components/PokemonPage.vue"
-
+import ConsultaPage from "./components/ConsultaPage.vue"
 export default {
   
   name: "App",
   components: {
     pokemon,
     PokemonPage,
+    ConsultaPage,
   },
 };
 </script>
