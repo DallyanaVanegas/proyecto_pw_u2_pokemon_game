@@ -2,7 +2,7 @@
   
   <div class="option-container">
     <ul>
-      <li v-for="pokemons in pokemon" :key="pokemons.id" v-on:click="$emit('eventoEmitido')"> {{pokemons.nombre}}</li>
+      <li v-for="pokemons in pokemon" :key="pokemons.id" v-on:click="$emit('eventoHijo',{par1:pokemons.id,par2:pokemons.nombre})"> {{pokemons.nombre}}</li>
     </ul>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
       type: Array,
       required: true
     }
-  }
+  },
 };
 </script>
 
