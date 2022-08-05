@@ -1,17 +1,18 @@
 <template>
-  <pokemonPage/>
+  <img src="./assets/logo.png" alt="Vue logo" />
+  <router-view/>
+  <componente-picture/>
 </template>
 
 <script>
-import pokemon from "./components/pokemon.vue";
-import PokemonPage from "./components/PokemonPage.vue"
+
+import ComponentePicture from "./modulos/pokemon/componentes/ComponentePicture.vue"
 
 export default {
-  
   name: "App",
   components: {
-    pokemon,
-    PokemonPage,
+    ComponentePicture,
+   
   },
 };
 </script>
